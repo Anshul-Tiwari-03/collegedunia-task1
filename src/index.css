@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fa-stack[data-count]:after{
+  position:absolute;
+  right:0%;
+  
+  top:1%;
+  content: attr(data-count);
+  font-size:12px;
+  padding:.2em;
+  border-radius:50%;
+  line-height:.25em;
+  color: white;
+  background:rgba(255,0,0,.85);
+  text-align:center;
+  min-width:1em;
+  font-weight:bold;
+}
+
+.typing-erase {
+  animation: 
+    4s typing-erase 4s steps(50, end) infinite,
+    blink-caret .5s step-end infinite;
+}
+.typewriter {
+
+
+  border-radius: 2.8em;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.25);
+  margin: 2em;
+  padding-left: 20%;
+  color: white;
+}
+
+
+
+.typewriter p {
+  color: white;
+  font-size: 1.5em;
+  
+  font-weight: 400;
+  width: 0;
+  max-width: max-content;
+  overflow: hidden; 
+  border-right: .05em solid #464545; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+}
+
+/* The type and erase effect */
+@keyframes typing-erase {
+  0% { width: 0 }
+  80% { width: 100% }
+  90%, 100% { width: 0 }
+}
+.demo {
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            inset: 0;
+        }
+
+        .btn-demo {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* modalans Styles */
+        .modalans {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modalans-dialog {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 320px;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        .modalans-content {
+            height: 100%;
+            padding: 20px;
+        }
+
+        .modalans-header {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .modalans-header button.close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .modalans-body {
+            padding-top: 20px;
+        }
+
+        /* Display modalans when active */
+        .modalans.active {
+            display: block;
+        }
